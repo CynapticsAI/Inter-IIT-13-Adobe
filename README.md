@@ -11,8 +11,8 @@ To list-out artifacts in the 32X32 AI generated Image from the given list of Art
 
 ## Members
 * Vishnu  Jaddipal - Team Lead
+* Prachi Patil
 * Abhinav Gangil
 * Rishab Anand
 * Shreeyut Maheshwari
-* Prachi Patil
 * Utkarsh Singh
