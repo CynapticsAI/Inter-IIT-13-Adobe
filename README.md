@@ -17,7 +17,7 @@ Applications include:
 - News/media trustworthiness  
 
 **Dataset:**  
-The [CIFAKE dataset](#) provides 60,000 labeled 32×32 images:
+The [CIFAKE dataset](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images) provides 60,000 labeled 32×32 images:
 - `REAL`: Real-world images  
 - `FAKE`: AI-generated images  
 
