@@ -48,17 +48,17 @@ For each image classified in Task 1, identify **artifacts** that distinguish syn
 ## Our Approach
 
 ### Task 1:
-We trained a deep CNN-based classifier tailored for low-resolution (32×32) image classification using:
-- Data augmentation (flipping, jitter, noise)
-- ResNet and EfficientNet variants adapted for small inputs
-- Class-balanced sampling and Focal Loss to handle label imbalance
+We trained a binary image classifier based on the **CoaTNet architecture**, optimized specifically for 32×32 inputs. The model was trained using both clean and perturbed samples to enhance robustness:
+- **CoaTNet (Convolution + Transformer)** backbone for better generalization on synthetic features  
+- **Adversarial training** using pixel-level perturbations to improve detection of subtle generative patterns  
+- Data augmentation including flipping, noise injection, and brightness changes to increase diversity and generalization
 
 ### Task 2:
-To detect and explain artifacts, we employed:
-- Grad-CAM and saliency methods for explanation generation
-- Intermediate feature visualizations to locate artifact-prone areas
-- Rule-based logic to translate visual anomalies into textual artifacts
-- A lightweight text generation pipeline for explanation summaries
+For artifact detection and explanation generation, we focused on integrating powerful **vision-language models (VLMs)**:
+- Fine-tuned large VLMs including **Pixtral-12B**, **Moondream**, and **Qwen-VL** to localize artifacts and generate natural language explanations  
+- Curated a **custom dataset of 10,000+ real and AI-generated images**, synthesized via **Stable Diffusion**, with descriptive captions generated using **Gemini Flash 2.0**  
+- Combined visual saliency with language reasoning to output interpretable, artifact-aware justifications
+
 
 ---
 
