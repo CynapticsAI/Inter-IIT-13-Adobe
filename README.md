@@ -55,7 +55,7 @@ We trained a binary image classifier based on the **CoaTNet architecture**, opti
 
 ### Task 2:
 For artifact detection and explanation generation, we focused on integrating powerful **vision-language models (VLMs)**:
-- Fine-tuned large VLMs including **Pixtral-12B**, **Moondream**, and **Qwen-VL** to localize artifacts and generate natural language explanations  
+- Fine-tuned large VLMs including **Pixtral-12B**, **Moondream**,**Florence** and **Qwen-VL** to localize artifacts and generate natural language explanations  
 - Curated a **custom dataset of 10,000+ real and AI-generated images**, synthesized via **Stable Diffusion**, with descriptive captions generated using **Gemini Flash 2.0**  
 - Combined visual saliency with language reasoning to output interpretable, artifact-aware justifications
 
